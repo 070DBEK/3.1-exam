@@ -18,6 +18,7 @@ Bu loyiha ob-havo ma'lumotlarini saqlash, ko'rsatish va tahlil qilish uchun Djan
 
 - Ma'lumotlar bazasi: SQLite 
 
+ 
 
 # O'rnatish:
 

@@ -10,7 +10,7 @@ class WeatherData(models.Model):
     wind_direction = models.FloatField()
     precipitation = models.FloatField()
     recorded_at = models.DateTimeField(auto_now_add=True)
-    location = models.ForeignKey(Location, on_delete=models.CASCADE)
+    location = models.ForeignKey(Location, on_delete=models.CASCADE, related_name='Weather Datas')
 
 
 
@@ -23,5 +23,5 @@ class Forecast(models.Model):
     wind_speed = models.FloatField()
     wind_direction = models.FloatField()
     created_at = models.DateTimeField(auto_now_add=True)
-    location = models.ForeignKey(Location, on_delete=models.CASCADE)
+    location = models.ForeignKey(Location, on_delete=models.CASCADE, related_name='Forecast')
 
